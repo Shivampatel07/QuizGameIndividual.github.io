@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/QuizList.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="images/Logo.png" alt="Brainbooster" width="100%"></div>
+        <ul class="navbar">
+            <li><a href="#Home" class="active">Home</a></li>
+            <li><a href="#Quiz">Quiz</a></li>
+            <li><a href="#Upcoming">Upcoming</a></li>
+            <li><a href="#Contact_us">Contact</a></li>
+        </ul>
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon" onclick="fun()"></div>
+        </div>
+    </nav>
+    <div id="Home" class="attributes">
+        <div id="container">
+            <h1>Learn something new</h1>
+            <p>Are you ready to test your knowledge and have some fun? Look no further! Our quiz game website is the
+                perfect place for
+                you to challenge yourself and learn something new.
+            </p>
+            <p>What's more, our website is easy to use and completely free. You can play as many quizzes as you
+                like,
+                and even
+                challenge your friends to see who knows more. With our leaderboard, you can compete with other
+                players
+                from all over the
+                world and show off your skills.</p>
+            <p>So what are you waiting for? Join us today and start your quiz journey. Get ready to have fun and
+                learn
+                something new!</p>
+        </div>
+        <div id="img1"><img src="images/1st.jpg" width="100%" alt="ERROR"></div>
+    </div>
+    <div id="Quiz" class="attributes">
+        <h1>Latest Quiz </h1>
+        <br>
+        <br>
+        <br>
+        <div class="quizes">
+            <div class="card">
+                <img src="images/grid1.jpg" alt="Card Image" width="100%">
+                <div class="overlay">
+                    <h2>HTML Quiz</h2>
+                    <div class="description">
+                        <p>Best of luck for your quiz</p>
+                        <div class="QuizButton">
+                            <a href="quiz.html" id="htmlquiz" onclick="clicked(this.id)">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/grid2.jpg" alt="Card Image" width="100%">
+                <div class="overlay">
+                    <h2>CSS Quiz</h2>
+                    <div class="description">
+                        <p>Best of luck for your quiz</p>
+                        <div class="QuizButton">
+                            <a href="quiz.html" id="cssquiz" onclick="clicked(this.id)">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/grid3.jpg" alt="Card Image" width="100%">
+                <div class="overlay">
+                    <h2>JS Quiz</h2>
+                    <div class="description">
+                        <p>Best of luck for your quiz</p>
+                        <div class="QuizButton">
+                            <a href="quiz.html" id="jsquiz" onclick="clicked(this.id)">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="see-more"><a href="QuizList.html">SEE MORE</a></div>
+    </div>
+    <br><br>
+    <div id="Upcoming" class="attributes">
+        <p>Upcoming events</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/grid1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/grid2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/grid3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div id="Contact_us" class="attributes">
+        <div id="contact_form">
+            <h1 id="new">CONTACT US</h1>
+            <form action="">
+                <p>Name</p>
+                <p><input type="text" size="39" id="ContactName"></p>
+                <br>
+                <p>Email</p>
+                <p><input type="email" id="ContactEmail" size="39"></p>
+                <br>
+                <p>Subject</p>
+                <p><textarea id="ContactSubject" cols="40" rows="10"></textarea></p>
+                <br>
+                <button class="buttons" id="submit">Submit</button>
+            </form>
+        </div>
+        <div id="details">
+            <div id="title">
+                <h1>NEED 24/7 SUPPORT</h1>
+            </div>
+            <div id="details_description">
+                <table rules="none" width="100%">
+                    <tr>
+                        <td><img
+                                src="https://img.icons8.com/external-gradak-royyan-wijaya/48/null/external-calls-gradak-communikatok-solidarity-gradak-royyan-wijaya.png" />
+                        </td>
+                        <td>
+                            <h3>CALL SALES NOW</h3>
+                            <p>2347523842</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/dotty/80/null/time-machine.png" /></td>
+                        <td>
+                            <h3>SALES HOURS</h3>
+                            <p>7am - 4pm</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>SALES CONTACT INFO</h3>
+                            <p>shivp72019@gmail.com</p>
+                            <p>9345287342</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.icons8.com/ios/50/null/composing-mail.png" /></td>
+                        <td>
+                            <h3>MAILING ADDRESS</h3>
+                            <p>A-303 Dharti-2</p>
+                            <p>Behind Vishwakarma Temple</p>
+                            <p>Chandlodia ,Ahmedabad- 382481</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/card.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=montserret">
+    <link rel="stylesheet" href="css/QuizTemplate.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="images/Logo.png" alt="Brainbooster" width="100%"></div>
+    </nav>
+
+    <div id="space"></div>
+    <div id="main-content">
+        <div id="question">
+            <span id="numbers">
+
+            </span>
+            <span id="check">
+
+            </span>
+        </div>
+        <div id="mcqs">
+            <label>
+                <div class="options" id="option1" onclick="clickedoption(this)"><input type="radio" class="inputss"
+                        name="mcq" value=""> </div>
+            </label>
+            <label>
+                <div class="options" id="option2" onclick="clickedoption(this)"><input type="radio" name="mcq"
+                        class="inputss" value=""> </div>
+            </label>
+            <label>
+                <div class="options" id="option3" onclick="clickedoption(this)"><input type="radio" name="mcq"
+                        class="inputss" value=""> </div>
+            </label>
+            <label>
+                <div class="options" id="option4" onclick="clickedoption(this)"><input type="radio" name="mcq"
+                        class="inputss" value=""> </div>
+            </label>
+            <!-- <div class="buttons"><button id="previous" onmouseup="fun2(this)" onmousedown="fun(this)"
+                    onclick="pointer = prev(pointer-1)">prev</button> -->
+            <button id="next" onclick="pointer = next(pointer +1)">next</button>
+
+        </div>
+    </div>
+    </div>
+    <script src=" js/navbar.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>

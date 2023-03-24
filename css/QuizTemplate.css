@@ -1,0 +1,157 @@
+ * {
+     margin: 0;
+ }
+
+ #space {
+     height: 100px;
+ }
+
+ #check {
+     text-align: justify;
+ }
+
+ #question {
+     text-align: left;
+     font-size: 20px;
+ }
+
+ #mcqs {
+     text-align: left;
+     margin: 40px;
+     user-select: none;
+     color: #000;
+ }
+
+ #main-content span,
+ p,
+ div {
+     color: #1A4843;
+ }
+
+ .options {
+     border: solid #1A4843 1px;
+     margin: 20px 0px;
+     padding: 20px;
+     font-size: 18px;
+ }
+
+ .options:hover {
+     transition: all 0.4s ease-in-out;
+     background: #86F0D8;
+     color: black;
+ }
+
+ #main-content {
+     padding: 50px 80px;
+ }
+
+ button {
+     width: 100px;
+     margin: 0px 30px 0px 0px;
+     height: 40px;
+     font-size: 18px;
+     background-color: #1A4843;
+     border: solid #ECFFFC 0px;
+     color: #ECFFFC;
+     box-shadow: 0px 0px 0px 0px;
+     border-radius: 10px;
+ }
+
+ button:hover {
+     transition: all 0.3s ease-in-out;
+     box-shadow: 0px 1px 10px 0px #1A4843;
+ }
+
+ /* The Modal (background) */
+ .modal {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     /* Stay in place */
+     z-index: 1;
+     /* Sit on top */
+     padding-top: 100px;
+     /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+     /* Full width */
+     height: 100%;
+     /* Full height */
+     overflow: auto;
+     /* Enable scroll if needed */
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+     background-color: rgba(0, 0, 0, 0.4);
+     /* Black w/ opacity */
+ }
+
+ /* Modal Content */
+ .modal-content {
+     background-color: #fefefe;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+ }
+
+ /* The Close Button */
+ .close {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+
+ .close:hover,
+ .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ @media only screen and (max-width:1090px) {
+     * {
+         font-size: 17px;
+     }
+
+     button {
+         font-size: 15px;
+     }
+
+     .options {
+         padding: 10px;
+         font-size: 15px;
+     }
+
+     #mcqs {
+         margin: 10px;
+     }
+
+     #main-content {
+         padding: 50px 50px;
+     }
+ }
+
+ @media only screen and (max-width:600px) {
+     * {
+         font-size: 13px;
+     }
+
+     button {
+         font-size: 11px;
+     }
+
+     .options {
+         padding: 10px;
+         font-size: 11px;
+     }
+
+     #mcqs {
+         margin: 0px;
+     }
+
+     #main-content {
+         padding: 50px 20px;
+     }
+ }

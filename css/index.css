@@ -1,0 +1,308 @@
+/* ------------------ Home -------------- */
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ECFFFC;
+}
+#Home {
+    color: #1A4843;
+    font-size: 20px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#img1 {
+    padding: 30px;
+}
+
+#container {
+    padding: 50px;
+}
+
+#container h1 {
+    margin: 5px -45px;
+    padding: 50px;
+}
+
+/* ------------------ Quiz -------------- */
+textarea {
+    resize: none;
+    width: 100%;
+
+}
+
+#Quiz {
+    color: #1A4843;
+    /* ------------------ Quiz -------------- */
+    margin: 50px;
+}
+
+#Quiz h1 {
+    font-size: 35px;
+    float: left;
+}
+
+#see-more {
+    font-size: 13px;
+    float: right;
+}
+
+#see-more a {
+    color: #1A4843;
+    background-color: #ECFFFC;
+}
+
+#see-more a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-out;
+}
+
+.quizes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 50px 0px;
+    background-color: #ECFFFC;
+    color: #ECFFFC;
+    border-radius: 10px;
+    grid-template-rows: none;
+}
+
+
+
+/* ------------------ carousel -------------- */
+
+#Upcoming {
+    margin: 40px 10vw;
+    width: 80vw;
+}
+
+#Upcoming p {
+    font-size: 60px;
+    text-align: left;
+    margin: 30px;
+    font-family: Elephant;
+}
+
+#Upcoming .mySlides {
+    display: none
+}
+
+#Upcoming img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+#Upcoming .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+#Upcoming .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+#Upcoming .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#Upcoming .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+#Upcoming .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+#Upcoming .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+#Upcoming .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#Upcoming .active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+#Upcoming .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+#Contact_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0vw;
+
+}
+
+#Contact_us h1 {
+    margin: 20px 0px;
+}
+
+#contact_form {
+    padding: 5px 20px;
+
+}
+
+#submit {
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    color: #ECFFFC;
+    background-color: #1A4843;
+    border: solid #1A4843 1px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+#details {
+    background-color: #1A4843;
+    color: #ECFFFC;
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+}
+
+#submit:hover {
+    background-color: #86f0d7de;
+    color: #1A4843;
+    border: solid #1A4843 1px;
+    transition: all 0.3s ease;
+}
+[type="text"]{
+    border:1px solid #71eddb;
+}
+[type="email"]{
+    border:1px solid #71eddb;
+}
+textarea{
+    border:1px solid #71eddb;
+}
+td {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+table {
+    margin: 10px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width : 1090px) {
+
+    #Home {
+        flex-direction: column-reverse;
+    }
+
+    #img1 {
+
+        text-align: center;
+    }
+
+    #img1 img {
+        width: 80%;
+    }
+
+    #Quiz {
+        text-align: center;
+    }
+
+    #see-more a {
+        padding: 15px;
+        border: 1px solid #1A4843;
+        color: #1A4843;
+        font-size: medium;
+    }
+
+    #see-more a:hover {
+        color: #86F0D8;
+        text-decoration: none;
+        background-color: #1A4843;
+    }
+
+    #Contact_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px 10vw;
+
+    }
+
+    #Contact_us input {
+        width: 100%;
+    }
+
+    .quizes {
+        margin: 30px;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: none;
+    }
+
+    #details {
+        margin-top: 50px;
+    }
+
+    table {
+        font-size: 2vw;
+    }
+
+    table img {
+        width: 5vw;
+    }
+}
